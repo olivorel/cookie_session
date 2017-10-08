@@ -14,20 +14,20 @@ if (empty($_SESSION['loginname'])) {
             $addarticlecart = false;
 
             if ($_COOKIE['cookie1']) {
-                echo $_COOKIE['cookie1'] . '<br/><br/>';
                 $addarticlecart = true;
+                echo $_COOKIE['cookie1'] . '<br/><br/>';
             }
             if ($_COOKIE['cookie2']) {
-                echo $_COOKIE['cookie2'] . '<br/><br/>';
                 $addarticlecart = true;
+                echo $_COOKIE['cookie2'] . '<br/><br/>';
             }
             if ($_COOKIE['cookie3']) {
-                echo $_COOKIE['cookie3'] . '<br/><br/>';
                 $addarticlecart = true;
+                echo $_COOKIE['cookie3'] . '<br/><br/>';
             }
             if ($_COOKIE['cookie4']) {
-                echo $_COOKIE['cookie4'] . '<br/><br/>';
                 $addarticlecart = true;
+                echo $_COOKIE['cookie4'] . '<br/><br/>';
             }
             ?>
             <?php
