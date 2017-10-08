@@ -1,4 +1,16 @@
-<?php require 'inc/head.php'; ?>
+<?php
+require 'inc/head.php';
+
+if (!empty($_POST['loginname'])) {
+    $_SESSION['loginname'] = $_POST['loginname'];
+}
+
+if(!empty($_SESSION['loginname'])){
+    header('Location: index.php');
+    exit();
+}
+?>
+
 <div class="container" style="margin-top:40px">
 <div class="row">
   <div class="col-sm-6 col-md-4 col-md-offset-4">
@@ -40,4 +52,4 @@
   </div>
 </div>
 </div>
-<?php require 'inc/foot.php' ?>
+<?php require 'inc/foot.php';?>
