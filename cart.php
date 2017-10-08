@@ -14,18 +14,22 @@ if (empty($_SESSION['loginname'])) {
             $addarticlecart = false;
 
             if ($_COOKIE['cookie1']) {
+
                 $addarticlecart = true;
                 echo $_COOKIE['cookie1'] . '<br/><br/>';
             }
             if ($_COOKIE['cookie2']) {
+
                 $addarticlecart = true;
                 echo $_COOKIE['cookie2'] . '<br/><br/>';
             }
             if ($_COOKIE['cookie3']) {
+
                 $addarticlecart = true;
                 echo $_COOKIE['cookie3'] . '<br/><br/>';
             }
             if ($_COOKIE['cookie4']) {
+
                 $addarticlecart = true;
                 echo $_COOKIE['cookie4'] . '<br/><br/>';
             }
@@ -38,9 +42,22 @@ if (empty($_SESSION['loginname'])) {
 
             <?php
             if ($addarticlecart == true) {
-                ?>
 
-                <form method="POST" action="clear_basket.php">
+            if ($_COOKIE['cookie1']) {
+                setcookie("cookie1","", time()-3600);
+            }
+            if ($_COOKIE['cookie2']) {
+                setcookie("cookie2","", time()-3600);
+            }
+            if ($_COOKIE['cookie3']) {
+                setcookie("cookie3","", time()-3600);
+            }
+            if ($_COOKIE['cookie4']) {
+                setcookie("cookie4","", time()-3600);
+            }
+          ?>
+
+                <form method="POST" action="#">
                     <input type="submit" value="Vider le panier" class="btn btn-danger">
 
             <?php } ?>
