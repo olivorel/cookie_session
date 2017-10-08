@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 sélectionnés# Template pour : Quetes  PHP Cookies & Sessions
 
 Ce Template html va te permettre de réaliser ta quête sur la gestion des cookies et des sessions avec PHP.
@@ -11,3 +12,6 @@ Sont inclus :
 Tu n'as que du script PHP à fournir !
 
 Après, si l'envie te prend de refondre le CSS, nous ne ferons rien pour t'en empêcher !
+=======
+# cookie_session
+>>>>>>> 4bf833067c732e98185acd678c9b3d8b75753fe0
