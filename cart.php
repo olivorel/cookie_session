@@ -1,11 +1,15 @@
 <?php
-session_start();
+
+
+require 'inc/head.php';
 
 if (empty($_SESSION['loginname'])) {
-    header('Location: http://127.0.0.1:8000/login.php');
+    header('Location: login.php');
     exit;
 }
 ?>
+
+
 <section class="cookies container-fluid">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -34,36 +38,32 @@ if (empty($_SESSION['loginname'])) {
                 echo $_COOKIE['cookie4'] . '<br/><br/>';
             }
             ?>
-            <?php
 
-            require 'inc/head.php';
 
-            ?>
-
-            <?php
+           <?php
             if ($addarticlecart == true) {
 
-            if ($_COOKIE['cookie1']) {
-                setcookie("cookie1","", time()-3600);
-            }
-            if ($_COOKIE['cookie2']) {
-                setcookie("cookie2","", time()-3600);
-            }
-            if ($_COOKIE['cookie3']) {
-                setcookie("cookie3","", time()-3600);
-            }
-            if ($_COOKIE['cookie4']) {
-                setcookie("cookie4","", time()-3600);
-            }
-          ?>
+                if ($_COOKIE['cookie1']) {
+                setcookie("cookie1", "", time() - 1);
+                }
+                if ($_COOKIE['cookie2']) {
+                setcookie("cookie2", "", time() - 1);
+                }
+                if ($_COOKIE['cookie3']) {
+                setcookie("cookie3", "", time() - 1);
+                }
+                if ($_COOKIE['cookie4']) {
+                setcookie("cookie4", "", time() - 1);
+                }
+            ?>
 
-                <form method="POST" action="#">
-                    <input type="submit" value="Vider le panier" class="btn btn-danger">
+            <form method="POST" action="#">
+                <input type="submit" value="Vider le panier" class="btn btn-danger">
 
-            <?php } ?>
-            <form method="POST" action="index.php">
-                <input type="submit" value="Retour page d'accueil" class="btn btn-info">
-            </form>
+                <?php } ?>
+                <form method="POST" action="index.php">
+                    <input type="submit" value="Retour page d'accueil" class="btn btn-info">
+                </form>
         </div>
     </div>
 </section>
