@@ -52,7 +52,7 @@ session_start();
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container-fluid text-right">
-        <strong>Hello <?= $_SESSION['loginname']; ?></strong>
+        <strong>Hello <?= $_SESSION['loginname'] ?? 'Wilder' ?></strong>
 
     </div>
 </header>
