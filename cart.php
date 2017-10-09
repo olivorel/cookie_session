@@ -17,22 +17,22 @@ if (empty($_SESSION['loginname'])) {
             <?php
             $addarticlecart = false;
 
-            if ($_COOKIE['cookie1']) {
+            if (!empty($_COOKIE['cookie1'])) {
 
                 $addarticlecart = true;
                 echo $_COOKIE['cookie1'] . '<br/><br/>';
             }
-            if ($_COOKIE['cookie2']) {
+            if (!empty($_COOKIE['cookie2'])) {
 
                 $addarticlecart = true;
                 echo $_COOKIE['cookie2'] . '<br/><br/>';
             }
-            if ($_COOKIE['cookie3']) {
+            if (!empty($_COOKIE['cookie3'])) {
 
                 $addarticlecart = true;
                 echo $_COOKIE['cookie3'] . '<br/><br/>';
             }
-            if ($_COOKIE['cookie4']) {
+            if (!empty($_COOKIE['cookie4'])) {
 
                 $addarticlecart = true;
                 echo $_COOKIE['cookie4'] . '<br/><br/>';
