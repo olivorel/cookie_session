@@ -9,9 +9,8 @@ Sont inclus :
 * la page des produits disponibles a l'achat,
 * la page panier, affichant à partir des cookies les produits sélectionnés par l'utilisateur.
 
-Tu n'as que du script PHP à fournir !
+Tu n'as que du script PHP à fournir !Après, si l'envie te prend de refondre le CSS, nous ne ferons rien pour t'en empêcher !
 
-Après, si l'envie te prend de refondre le CSS, nous ne ferons rien pour t'en empêcher !
-=======
+
 # cookie_session
->>>>>>> 4bf833067c732e98185acd678c9b3d8b75753fe0
+
